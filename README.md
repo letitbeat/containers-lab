@@ -13,7 +13,7 @@ First, you will need to install Docker for your specific OS, please refer to [Do
 
 ## Part 1
 
-As previously mentioned there already available thousands of pre-built images so the goal of this part is to have an up a running Wordpress site, if you are not familiar with Wordpress it is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL used by millions of websites.
+As previously mentioned there already available thousands of pre-built images so the goal of this part is to have an up a running [Wordpress](https://wordpress.org) website, if you are not familiar with [Wordpress](https://wordpress.org) it is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL used by millions of websites.
 
 You will have to pull and run both images [Wordpress](https://hub.docker.com/_/wordpress/) and [MySQL](https://hub.docker.com/_/mysql/) in order to achieve the goal of this part. For instructions on how to run each of these images please refer to the Docker store documentation.
 
@@ -298,6 +298,9 @@ $ docker run -p 8080:80 lab-web lab-web
 
 And now just go ahead to `http://localhost:8080/` to see your new 'Amazing Hello World Service' up and running!
 
+** Optional: You can go further and use [Docker compose](https://docs.docker.com/compose/) to build and deploy this web application.
+
+>The second part of this laboratory is partially based on [Web apps with Docker](https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md) lab.
 
 
 
