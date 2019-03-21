@@ -17,6 +17,17 @@ As previously mentioned there already available thousands of pre-built images so
 
 You will have to pull and run both images [Wordpress](https://hub.docker.com/_/wordpress/) and [MySQL](https://hub.docker.com/_/mysql/) in order to achieve the goal of this part. For instructions on how to run each of these images please refer to the Docker store documentation.
 
+### MySQL
+```
+$ docker run --name db-wordpress -e MYSQL_ROOT_PASSWORD=somewordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress -d mysql:5.7
+```
+
+### Wordpress
+
+```
+$ docker run —-name wordpress -p 8000:80 -d wordpress:latest
+```
+
 > Please make sure you pull the version 5.7 of MySQL
 
 ## Part 2
@@ -293,7 +304,7 @@ Successfully tagged lab-web:latest
 #### Run the image
 
 ```
-$ docker run -p 8080:80 lab-web lab-web
+$ docker run -p 8080:80 --name lab-web lab-web
 ```
 
 And now just go ahead to `http://localhost:8080/` to see your new 'Amazing Hello World Service' up and running!
