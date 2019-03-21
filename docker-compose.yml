@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  api:
+    image: lab-api
+    ports:
+      - "8888:5000"
+    build: ./api
+  web:
+    image: lab-web
+    ports:
+      - "8080:80"
+    build: ./web
