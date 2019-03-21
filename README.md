@@ -122,7 +122,7 @@ EXPOSE 5000
 5. The last step is the command for running the application which is simply - `python ./app.py`. Use the CMD command to do that:
 
 ```
-CMD ["python", "/usr/src/app/app.py"]
+CMD ["python3", "/usr/src/app/app.py"]
 ```
 
 #### Build the image
